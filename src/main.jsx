@@ -7,14 +7,16 @@ import {
 } from "react-router-dom";
 import './index.css'
 
-// Set Root as the root route's element
 import Root from "./routes/root";
+
+import ErrorPage from "./error-page";
 
 // Create the router
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
   },
 ])
 
